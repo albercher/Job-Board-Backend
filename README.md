@@ -1,118 +1,148 @@
-# Phase 3 Project Guidelines
+<div id="top"></div>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-## Learning Goals
 
-- Build a web basic API with Sinatra and Active Record to support a React
-  frontend
 
-## Introduction
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-Congrats on getting through all the material for Phase 3! Now's the time to put
-it all together and build something from scratch to reinforce what you know and
-expand your horizons.
 
-The focus of this project is **building a Sinatra API backend** that uses
-**Active Record** to access and persist data in a database, which will be used
-by a separate **React frontend** that interacts with the database via the API.
 
-## Requirements
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-For this project, you must:
 
-- Use Active Record to interact with a database.
-- Have a minimum of two models with a one-to-many relationship.
-- Create API routes in Sinatra that handles at least three different CRUD
-  actions for at least one of your Active Record models.
-- Build a separate React frontend application that interacts with the API to
-  perform CRUD actions.
-- Use good OO design patterns. You should have separate classes for each of your
-  models, and create instance and class methods as necessary.
+<h3 align="center">Job Board</h3>
 
-For example, build a todo list application with a React frontend interface and a
-Sinatra backend API, where a user can:
+  <p align="center">
+    Job Board is a full stack application that was made to demonstrate building a Sinatra API backend that uses Active Record to access and persist data in a database, which is used by a separate React frontend that interacts with the database via the API.
+    <br />
+    <br />
+    <a href="https://github.com/albercher/Job-Board-Backend">Demo Coming Soon</a>
+    ·
+    <a href="https://github.com/albercher/Job-Board-Backend/issues">Report Bug</a>
+  </p>
+</div>
 
-- **Create** a new todo
-- **Read** a list of all todos
-- **Update** an individual todo
-- **Delete** a todo
 
-A `Todo` can be tagged with a `Category`, so that each todo _belongs to_ a
-category and each category _has many_ todos.
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+Job Board was made as a phase 3 project at Flatiron School.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### Built With
+
+* [React.js](https://reactjs.org/)
+* [MUI](https://mui.com/)
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-### Backend Setup
+IMPORTANT: Be sure to follow the instructions for setting up the [back end]() as well.
 
-This repository has all the starter code needed to get a Sinatra backend up and
-running. [**Fork and clone**][fork link] this repository to get started. Then, run
-`bundle install` to install the gems.
 
-[fork link]: https://github.com/learn-co-curriculum/phase-3-sinatra-react-project/fork
+### Prerequisites
 
-The `app/controllers/application_controller.rb` file has an example GET route
-handler. Replace this route with routes for your project.
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-You can start your server with:
+### Installation
 
-```console
-$ bundle exec rake server
-```
+1. Clone the repo
+   ```sh
+   git clone https://github.com/albercher/Job-Board-Backend.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start the local server
+   ```sh
+   npm start
+   ```
 
-This will run your server on port
-[http://localhost:9292](http://localhost:9292).
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Frontend Setup
 
-Your backend and your frontend should be in **two different repositories**.
 
-Create a new repository in a **separate folder** with a React app for your
-frontend. `cd` out of the backend project directory, and use
-[create-react-app][] to generate the necessary code for your React frontend:
+<!-- CONTACT -->
+## Contact
 
-```console
-$ npx create-react-app my-app-frontend
-```
+Abbey Bercher - [@AbbeyBercher](https://twitter.com/AbbeyBercher) - abbeybercher@gmail.com
 
-After creating the project locally, you should also
-[create a repository on GitHub][create repo] to host your repo and help
-collaborate, if you're working with a partner.
+Project Link: [https://github.com/albercher/Job-Board-Backend](https://github.com/albercher/Job-Board-Backend)
 
-### Fetch Example
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Your React app should make fetch requests to your Sinatra backend! Here's an
-example:
 
-```js
-fetch("http://localhost:9292/test")
-  .then((r) => r.json())
-  .then((data) => console.log(data));
-```
 
-## Project Tips
-
-- This project is intended to focus more on the backend than the frontend, so
-  try and keep the React side of things relatively simple. Focus on working with
-  Active Record and performing CRUD actions. What are some interesting queries you can write? What kinds of questions can you ask of your data?
-- Once you have a project idea, come up with a domain model and decide what
-  relationships exist between the models in your application. Use a tool like
-  [dbdiagram.io][] to help visualize your models.
-- Decide on your API endpoints. What data should they return? What kind of CRUD
-  action should they perform? What data do they need from the client?
-- Use [Postman][postman download] to test your endpoints.
-- Use `binding.pry` to debug your requests on the server. It's very helpful to use a
-  `binding.pry` in your controller within a route to see what `params` are being
-  sent.
-- Use the [Network Tab in the Dev Tools][network tab] in the frontend to debug
-  your requests.
-
-## Resources
-
-- [create-react-app][]
-- [dbdiagram.io][]
-- [Postman][postman download]
-
-[create-react-app]: https://create-react-app.dev/docs/getting-started
-[create repo]: https://docs.github.com/en/get-started/quickstart/create-a-repo
-[dbdiagram.io]: https://dbdiagram.io/
-[postman download]: https://www.postman.com/downloads/
-[network tab]: https://developer.chrome.com/docs/devtools/network/
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/albercher/Job-Board-Backend.svg?style=for-the-badge
+[contributors-url]: https://github.com/albercher/Job-Board-Backend/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/albercher/Job-Board-Backend.svg?style=for-the-badge
+[forks-url]: https://github.com/albercher/Job-Board-Backend/network/members
+[stars-shield]: https://img.shields.io/github/stars/albercher/Job-Board-Backend.svg?style=for-the-badge
+[stars-url]: https://github.com/albercher/Job-Board-Backend/stargazers
+[issues-shield]: https://img.shields.io/github/issues/albercher/Job-Board-Backend.svg?style=for-the-badge
+[issues-url]: https://github.com/albercher/Job-Board-Backend/issues
+[license-shield]: https://img.shields.io/github/license/albercher/Job-Board-Backend.svg?style=for-the-badge
+[license-url]: https://github.com/albercher/Job-Board-Backend/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/abbeybercher
+[product-screenshot]: images/screenshot.png
