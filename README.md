@@ -90,16 +90,8 @@ Job Board was made as a phase 3 project at Flatiron School.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-IMPORTANT: Be sure to follow the instructions for setting up the [back end]() as well.
+IMPORTANT: Be sure to follow the instructions for setting up the [front end](https://github.com/albercher/Job-Board-Frontend) as well.
 
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
@@ -109,11 +101,11 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   bundle install
    ```
 3. Start the local server
    ```sh
-   npm start
+   bundle exec rake server
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
