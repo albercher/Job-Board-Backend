@@ -79,8 +79,7 @@ Job Board was made as a phase 3 project at Flatiron School.
 
 ### Built With
 
-* [React.js](https://reactjs.org/)
-* [MUI](https://mui.com/)
+* [Ruby on Rails](https://guides.rubyonrails.org/v5.0/index.html)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
