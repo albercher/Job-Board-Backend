@@ -102,7 +102,15 @@ IMPORTANT: Be sure to follow the instructions for setting up the [front end](htt
    ```sh
    bundle install
    ```
-3. Start the local server
+3. Ensure databases are migrated
+   ```sh
+   bundle exec rake db:migrate
+   ```
+4. Ensure seed data is loaded
+   ```sh
+   bundle exec rake db:seed:replant
+   ```
+5. Start the local server
    ```sh
    bundle exec rake server
    ```
