@@ -3,6 +3,7 @@ class ApplicationController < Sinatra::Base
   
   get "/listings" do
     # get listing with their company info nested
+    # listings = Listing.order(created_on: :desc, title: :asc)
     listings = Listing.all
     listings.to_json(include: :company)
   end
